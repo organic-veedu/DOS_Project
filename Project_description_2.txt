@@ -1,0 +1,18 @@
+The banker’s algorithm is a resource allocation and deadlock avoidance algorithm that tests for safety by
+simulating the allocation for predetermined maximum possible amounts of all resources, then makes an
+state” check to test for possible activities, before deciding whether allocation should be allowed to
+continue.
+Example: Snapshot at the initial stage:
+1. Consider the following resource allocation state with 5 processes and 4 resources: There are
+total existing resources of 6 instances of type R1, 7 instances of type R2, 12 instance of type R3
+and 12 instances of type R4.
+Process  Allocation 	Max
+  	 R1 R2 R3 R4 R1 R2 R3 R4
+P1 	 0   0  1  2  0  0  1  2
+P2 	 2   0  0  0  2  7  5  0
+P3 	 0   0  3  4  6  6  5  6
+P4 	 2   3  5  4  4  3  5  6
+P5 	 0   3  3  2  0  6  5  2
+a) Find the content of the need matrix.
+b) Is the system in a safe state? If so, give a safe sequence of the process.
+c) If P3 will request for 1 more instances of type R2, Can the request be granted immediately or not
